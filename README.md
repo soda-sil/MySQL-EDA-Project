@@ -1,8 +1,10 @@
 # 🔍 Exploratory Data Analysis in MySQL — Tech Layoffs Dataset
 
 ## 📌 Project Overview
-This project performs Exploratory Data Analysis (EDA) on a cleaned dataset of tech industry layoffs using MySQL. The goal was to explore the data freely, identify trends, patterns, and outliers, and extract meaningful business insights from the layoffs data.
-This project was built on top of the Data Cleaning in MySQL project, using the cleaned layoffs_staging2 table as its starting point.
+This project performs Exploratory Data Analysis (EDA) on a cleaned dataset of tech industry layoffs using MySQL. This project was built on top of the Data Cleaning in MySQL project, using the cleaned layoffs_staging2 table as its starting point.
+
+The goal was to explore the data freely, identify trends, patterns, and outliers, and extract meaningful business insights from the layoffs data.
+
 
 ## 📂 Dataset
 
@@ -19,23 +21,28 @@ This project was built on top of the Data Cleaning in MySQL project, using the c
 
 
 ## 🔍 Key Questions Explored
-1. What was the largest single-day layoff?
+1. **What was the largest single-day layoff?**
+   
 Queried the maximum total_laid_off in the dataset — identified a company that laid off 12,000 people in a single day.
 
-1. Which companies laid off 100% of their workforce?
+1. **Which companies laid off 100% of their workforce?**
+
 Filtered for percentage_laid_off = 1 and sorted by total employees and funds raised to understand the scale of these companies.
 
-1. Which companies had the most total layoffs overall?
+1. **Which companies had the most total layoffs overall?**
    
-1. How many people were laid off per year?
+1. **How many people were laid off per year?**
    
-1. Which industries and countries were most affected?
+1. **Which industries and countries were most affected?**
+   
 Grouped by industry and country to identify the hardest-hit sectors and regions.
 
-1. Rolling Monthly Total of Layoffs
+1. **Rolling Monthly Total of Layoffs**
+   
 Used a CTE with a window function to calculate a cumulative rolling total of layoffs month by month.
 
-1. Top 5 Companies with Most Layoffs Per Year
+1. **Top 5 Companies with Most Layoffs Per Year**
+
 Used nested CTEs and DENSE_RANK() to rank companies by layoffs within each year.
 
 ## 💡 Key SQL Concepts Demonstrated
@@ -60,17 +67,17 @@ This project uses data cleaned in: Data Cleaning in MySQL — Layoffs Dataset
 
 ## 🚀 How to Reproduce
 
-1.First complete the Data Cleaning project to generate the layoffs_staging2 table
+1. First complete the Data Cleaning project to generate the layoffs_staging2 table
 
-1.Open sql/eda_analysis.sql in MySQL Workbench
+1. Open sql/eda_analysis.sql in MySQL Workbench
 
-1.Run queries individually or all at once to explore the results
+1. Run queries individually or all at once to explore the results
 
 
 ## 👤 Author
 
 ### Sofia Costa
 
-LinkedIn: https://www.linkedin.com/in/sofiassvcosta/
+https://www.linkedin.com/in/sofiassvcosta/
 
-GitHub: https://github.com/soda-sil
+https://github.com/soda-sil
