@@ -8,7 +8,7 @@ The goal was to explore the data freely, identify trends, patterns, and outliers
 
 ## 📂 Dataset
 
-- **Source:** Layoffs Dataset — from AlexTheAnalyst
+- **Source:** Layoffs Dataset from AlexTheAnalyst
 - **Rows:** ~2,361 records (after cleaning)
 - **Columns:** company, location, industry, total_laid_off, percentage_laid_off, date, stage, country, funds_raised_millions
 - **Time Period:** Tech layoffs from 2022–2023
@@ -16,18 +16,18 @@ The goal was to explore the data freely, identify trends, patterns, and outliers
 
 ## 🛠️ Tools Used
 
-- MySQL — all analysis performed in SQL
-- MySQL Workbench — query execution and results exploration
+- **MySQL:** all analysis performed in SQL
+- **MySQL Workbench:** query execution and results exploration
 
 
 ## 🔍 Key Questions Explored
 1. **What was the largest single-day layoff?**
 
-    Queried the maximum total_laid_off in the dataset — identified a company that laid off 12,000 people in a single day.
+    - Queried the maximum total_laid_off in the dataset: identified a company that laid off 12,000 people in a single day.
    
 1. **Which companies laid off 100% of their workforce?**
 
-   Filtered for percentage_laid_off = 1 and sorted by total employees and funds raised to understand the scale of these companies.
+   - Filtered for percentage_laid_off = 1 and sorted by total employees and funds raised to understand the scale of these companies.
    
 1. **Which companies had the most total layoffs overall?**
    
@@ -35,15 +35,15 @@ The goal was to explore the data freely, identify trends, patterns, and outliers
 
 1. **Which industries and countries were most affected?**
    
-    Grouped by industry and country to identify the hardest-hit sectors and regions.
+    - Grouped by industry and country to identify the hardest-hit sectors and regions.
 
 1. **Rolling Monthly Total of Layoffs**
    
-    Used a CTE with a window function to calculate a cumulative rolling total of layoffs month by month. 
+    - Used a CTE with a window function to calculate a cumulative rolling total of layoffs month by month. 
 
 1. **Top 5 Companies with Most Layoffs Per Year**
    
-    Used nested CTEs and DENSE_RANK() to rank companies by layoffs within each year.
+    - Used nested CTEs and DENSE_RANK() to rank companies by layoffs within each year.
 
 
 ## 💡 Key SQL Concepts Demonstrated
@@ -64,7 +64,7 @@ The goal was to explore the data freely, identify trends, patterns, and outliers
     └── eda_analysis.sql        # Full EDA script
 
 ## 🔗 Related Project
-This project uses data cleaned in: Data Cleaning in MySQL — Layoffs Dataset
+This project uses data cleaned in: Data Cleaning in MySQL (Layoffs Dataset)
 
 ## 🚀 How to Reproduce
 
