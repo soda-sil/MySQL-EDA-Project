@@ -53,15 +53,6 @@ The goal was to explore the data freely, identify trends, patterns, and outliers
 - **String Functions:** SUBSTRING() for date parsing
 - **Filtering & Sorting:** WHERE, ORDER BY, HAVING
 
-## 📁 Repository Structure
-├── README.md
-
-├── data/
-
-│   └── layoffs.csv             # Raw dataset
-
-└── sql/
-    └── eda_analysis.sql        # Full EDA script
 
 ## 🔗 Related Project
 This project uses data cleaned in: Data Cleaning in MySQL (Layoffs Dataset)
